@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-   <style>
-    div, main{
-        border: 4px solid;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-   </style>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div,nav{
+            border: 2px solid;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
+<!-- parent -->
 <body>
-
-    <!-- container-fluid -->
-    <div class="container-fluid " style="height: 100vh;">
-
+  <div class="container-fluid gx-0 d-flex flex-column" style="min-height: 100vh;">
         <!-- Navbar -->
-        <nav class="navbar bg-light  ">
-          <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1 fw-bold">Navbar</span>
-          </div>
-        </nav>
+        <!-- As a link -->
+     <nav class="navbar bg-primary p-0" >
+       <div class="container-fluid">
+         <a class="navbar-brand" href="./Bootstrrap-component/navbar.html">Navbar</a>
+       </div>
+    </nav>
 
-        <!-- main -->
-        <main class="container-xl text-danger flex-grow-1">
-            <div class="row flex-grow-1">
-                <div class="col-6 text-danger flex-grow-1 " style="">hey</div>
-                <div class="col-6">hi</div>
-            </div>
-        </main>
+     <!-- main -->
+  <main class="container-lg bg-danger flex-grow-1">
 
-    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="container-fluid bg-light" style="min-height: 10vh;">
+    
+  </footer>
+ </div>
 </body>
 </html>
